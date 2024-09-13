@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="form-box">
+            <h1 id="title">Survey</h1>
+            <p id="description">This is a sample survey form</p>
+            <div class="forms-container">
+                <form id="survey-form">
+                <div class="form-row">
+                    <label for="name" id="name-label">Name</label>
+                    
+                        <input type="text" id="name" required  placeholder="Enter your name">
+                    
+                </div>
+                <div class="form-row">
+                    <label for="email" id="email-label">Email</label>
+                    
+                        <input id="email" type="email" required placeholder="someone@gmail.com">
+                   
+                </div>
+                <div class="form-row">
+                    <label for="number" id="number-label">age:</label>
+                    <input type="number" name="number" min="1" max="100" placeholder="Select your age"  id="number">
+                </div>
+                
+                    
+                <div class="form-row">
+                    
+                        <p>Select Your Country</p>
+                        <select class="country-select" id="dropdown">
+
+                            <option value="none" selected disabled hidden>Select a country</option>
+                            <option value="nepal">Nepal</option>
+                            <option value="usa">United States</option>
+                            <option value="india">India</option>
+                            <option value="china">China</option>
+                            <option value="germany">Germany</option>
+                            <option value="france">France</option>
+                            
+                          </select>
+                    
+                </div>
+                <div class="form-row">
+                    
+                        <p>Select Your Favourite Programming Language </p>
+                        <label >
+                            <input type="radio" name="language" value="Python">
+                            Python
+                        </label><br>
+                        <label >
+                            <input type="radio" name="language" value="cpp">
+                            c++
+                        </label><br>
+                        <label >
+                            <input type="radio" name="language" value="Javascript">
+                            Javascript
+                        </label><br>
+                        <label >
+                            <input type="radio" name="language" value="Java">
+                            Java
+                        </label><br>
+                        <label >
+                            <input type="radio" name="language" value="GO">
+                            Golang
+                        </label><br>
+
+                    
+                </div>
+                <div class="form-row">
+                    <p>Did You Liked this page?</p>
+                    <label >
+                        <input type="radio" name="Liked" value="YES">
+                        Yes,Loved it!
+                    </label><br>
+                    <label >
+                        <input type="radio" name="Liked" value="NO">
+                        No,not really!
+                    </label><br>
+                </div>
+                <div class="text">
+                    <p>Any additional comments?</p>
+                    <label>
+                        <textarea name="feedback" id="feedback" placeholder="Enter your message"></textarea>
+                    </label>
+                </div>
+                    <input type="checkbox" value="rule1" required>
+                    <label for="rule1" class="condition">You agree with all terms and conditions.</label><br>
+                    <input type="checkbox" value="rule2" required>
+                    <label for="rule2"class="condition">YOu are sure you have filled all info right</label><br>
+                    <button type="submit" id="submit">submit</button>
+                    
+                    
+               
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
